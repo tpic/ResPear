@@ -1,0 +1,294 @@
+body {
+        color: #4f6b72;
+        background: #EFFFFA;
+        text-align: center;
+}
+
+table {
+        margin: 0 auto;
+}
+
+caption {
+        font: italic 26px Verdana, Arial, Helvetica, sans-serif;
+        padding: 0 0 5px 0;
+}
+
+th {
+        font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+        color: #4f6b72;
+        background: #CAE8EA;
+        border-right: 1px solid #C1DAD7;
+        border-bottom: 1px solid #C1DAD7;
+        border-top: 1px solid #C1DAD7;
+        letter-spacing: 2px;
+        text-align: left;
+        padding: 6px 6px 6px 12px;
+}
+
+td {
+        background: #fff;
+        border-right: 1px solid #C1DAD7;
+        border-bottom: 1px solid #C1DAD7;
+        padding: 6px 6px 6px 12px;
+}
+td p {
+        font: italic 11px auto Verdana, Arial, Helvetica, sans-serif;
+        color: #4f6b72;
+        margin: 0px;
+        padding: 0px;
+}
+td.url {
+        border-left: 1px solid #C1DAD7;
+        border-top: 0;
+}
+td.url a {
+        font: normal 11px auto Verdana, Arial, Helvetica, sans-serif;
+        color: #c75f3e;
+}
+
+#content {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 800px;
+}
+
+
+/* from http://jeffhowden.com/code/css/forms/ */
+
+form {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+/*    min-width: 560px;*/
+/*    max-width: 620px;*/
+/*    width: 590px;*/
+}
+
+form fieldset {
+        clear: both;
+        font-size: 100%;
+        border-color: #000000;
+        border-width: 1px 0 0 0;
+        border-style: solid none none none;
+        padding: 10px;
+        margin: 0 0 0 0;
+}
+
+form fieldset legend {
+        font-size: 150%;
+        font-weight: normal;
+        margin: 0 0 0 0;
+        padding: 0 5px;
+}
+
+label {
+        font-size: 100%;
+}
+
+label u {
+        font-style: normal;
+        text-decoration: underline;
+}
+
+input, select, textarea {
+        font-family: Tahoma, Arial, sans-serif;
+        font-size: 100%;
+        color: #000000;
+}
+
+textarea {
+        overflow: auto;
+}
+
+form div {
+        clear: left;
+        display: block;
+        width: 354px;
+        zoom: 1;
+        margin: 5px 0 0 0;
+        padding: 1px 3px;
+}
+
+form fieldset div.notes {
+        float: right;
+        width: 158px;
+        height: auto;
+        margin: 0 0 10px 10px;
+        padding: 5px;
+        border: 1px solid #666666;
+        background-color: #ffffe1;
+        color: #666666;
+        font-size: 88%;
+}
+
+form fieldset div.notes h4 {
+        padding: 3px 0 3px 27px;
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: #666666;
+        color: #666666;
+        font-size: 110%;
+        margin:0px;
+        padding:0px;
+}
+
+form fieldset div.notes p {
+        margin: 0em 0em 1.2em 0em;
+        color: #666666;
+}
+
+form fieldset div.notes p.last {
+        margin: 0em;
+        padding: 2px;
+        text-align:justify;
+}
+
+form div fieldset {
+        clear: none;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #666666;
+        margin: 0 0 0 144px;
+        padding: 0 5px 5px 5px;
+        width: 197px;
+}
+
+form div fieldset legend {
+        font-size: 100%;
+        padding: 0 3px 0 9px;
+}
+
+form div.required fieldset legend {
+        font-weight: bold;
+}
+
+form div label {
+        display: block;
+        float: left;
+        width: 130px;
+        padding: 3px 5px;
+        margin: 0 0 5px 0;
+        text-align: right;
+}
+
+form div.optional label, label.optional {
+        font-weight: normal;
+}
+
+form div.required label, label.required {
+        font-weight: bold;
+}
+
+form div label.labelCheckbox, form div label.labelRadio {
+        float: none;
+        display: block;
+        width: 200px;
+        zoom: 1;
+        padding: 0;
+        margin: 0 0 5px 142px;
+        text-align: left;
+}
+
+form div fieldset label.labelCheckbox, form div fieldset label.labelRadio {
+        margin: 0 0 5px 0;
+        width: 170px;
+}
+
+form div img {
+        float: left;
+        border: 1px solid #000000;
+        margin: 0 0 5px 0;
+}
+
+p.error {
+        background-color: #ff0000;
+        color: #ffffff;
+        padding: 3px 3px 5px 27px;
+        border: 1px solid #000000;
+        margin: auto 100px;
+}
+
+form div.error {
+        background-color: #ffffe1;
+        color: #666666;
+        border: 1px solid #ff0000;
+}
+
+form div.error p.error {
+        background-color: transparent;
+        border-style: none;
+        font-size: 88%;
+        font-weight: bold;
+        margin: 0 0 0 118px;
+        width: 200px;
+        color: #ff0000;
+}
+
+form div select, form div textarea {
+        width: 200px;
+        padding: 1px 3px;
+        margin: 0 0 0 0;
+}
+
+form div input.inputText, form div input.inputPassword {
+        width: 200px;
+        padding: 1px 3px;
+        margin: 0 0 0 0;
+}
+
+form div input.inputFile {
+        width: 211px;
+}
+
+form div select.selectOne, form div select.selectMultiple {
+        width: 211px;
+        padding: 1px 3px;
+}
+
+form div input.inputCheckbox, form div input.inputRadio, input.inputCheckbox, input.inputRadio {
+        display: inline;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        border-width: 0;
+        padding: 0;
+        margin: 0 0 0 140px;
+}
+
+form div.submit {
+        width: 214px;
+        padding: 0 0 0 146px;
+}
+
+form div.submit div {
+        display: inline;
+        float: left;
+        text-align: left;
+        width: auto;
+        padding: 0;
+        margin: 0;
+}
+
+form div input.inputSubmit, form div input.inputButton, input.inputSubmit, input.inputButton {
+        background-color: #cccccc;
+        color: #000000;
+        width: auto;
+        padding: 0 6px;
+        margin: 0;
+}
+
+form div.submit div input.inputSubmit, form div.submit div input.inputButton {
+        float: right;
+        margin: 0 0 0 5px;
+}
+
+form div small {
+        display: block;
+        margin: 0 0 5px 142px;
+        padding: 1px 3px;
+        font-size: 88%;
+        zoom: 1;
+}
+
+

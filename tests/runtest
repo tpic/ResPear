@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#/*
+# * Respear
+# *
+# * (c) 2011 Thomas Picard
+# *
+# * For the full copyright and license information, please view the LICENSE
+# * file that was distributed with this source code.
+# */
+/applis/pirum/usr/bin/php  /applis/pirum/usr/bin/phpunit ResPearTest.php
