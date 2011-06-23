@@ -67,15 +67,15 @@
         echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
             <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
             <head>
-                <title>Interface d\'ApiKey</title>
+                <title>ResPear - API key administration</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                 <link rel="stylesheet" href="apikey.css" type="text/css" />
             </head>
             <body>
                 <center>
-                    <h1> Respear - Interface d\'API Key </h1>
+                    <h1>ResPear - API key administration</h1>
                     <TABLE BORDER="1">
-                    <tr><th> <center>Login</center> </th> <th><center> Mail</center> </th> <th><center> Api Key</center> </th> <th></th>
+                    <tr><th> <center>Login</center> </th> <th><center> Mail</center> </th> <th><center> API key</center> </th> <th></th>
                     </tr>';
         foreach ($tab_pwd as $k=>$v) {
             $t = split(":",$v);
@@ -86,7 +86,7 @@
                        <input type='hidden' name='mail' value=".$tab[$t[0]]." />
                        <input type='hidden' name='name' value=".$t[0]." />
                        <input type='hidden' name='apikey' value=".$t[1]." />
-                       <input type='image' value='submit' src='ko.png' title='block this user' />
+                       <input type='image' value='submit' src='ko.png' title='Block this user' />
                        </form>  ";
                 echo "<form method='post' action='admin.php'>
                        <input type='hidden' name='action' value='del' />
@@ -98,9 +98,9 @@
             }
         }
         echo "</TABLE><br /><br />
-            <h2> Member in the blacklist</h2> 
+            <h2> Members in the blacklist</h2> 
             <TABLE BORDER=\"1\">
-            <tr><th> <center>Login</center> </th> <th><center> Mail</center> </th> <th><center> Api Key</center> </th> <th></th> </tr>";
+            <tr><th> <center>Login</center> </th> <th><center> Mail</center> </th> <th><center> API key</center> </th> <th></th> </tr>";
         foreach ($tab_bl as $k=>$v) {
             $t = split(":",$v);
             if ($t[0] != "") {
@@ -110,7 +110,7 @@
                     <input type='hidden' name='mail' value=".$tab[$t[0]]." />
                     <input type='hidden' name='name' value=".$t[0]." />
                     <input type='hidden' name='apikey' value=".$t[1]." />
-                    <input type='image' value='submit'  src='ok.png' title='unblock this user' /> 
+                    <input type='image' value='submit'  src='ok.png' title='Unblock this user' /> 
                     </form>  ";
                 echo "<form method='post' action='admin.php?action=del&mail=".$tab[$t[0]]."&name=".$t[0]."&apikey=".$t[1]."'>
                         <input type='hidden' name='action' value='del' />
@@ -190,5 +190,3 @@
         }
         file_put_contents($GLOBALS['respear']['htapikey_file'],$l);
     }
-
-?>
